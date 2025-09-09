@@ -1,0 +1,18 @@
+.footer {
+  --background: orange; /* fundo laranja do footer */
+}
+
+.footer .lista {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;
+  --background: transparent;
+  background: transparent;
+}
+
+.footer .escript {
+  color: white;                
+  font-weight: bold;
+  --background: transparent;  /* remove fundo branco do ion-item */
+  border: none;
+}

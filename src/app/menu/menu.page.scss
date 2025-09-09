@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    background-color: orange;
+}
+.header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.header .logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+}
