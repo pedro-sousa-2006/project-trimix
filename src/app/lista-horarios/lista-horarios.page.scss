@@ -1,0 +1,68 @@
+/* Container geral */
+.container {
+  padding: 16px;
+}
+
+/* Nome do estabelecimento */
+.estabelecimento h2,
+.day h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Lista de horários */
+.lista-horario {
+  margin-top: 16px;
+
+  ion-item.itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+
+    /* Container direito: checkbox + horário + nome */
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+
+    /* Container esquerdo: links */
+    .left {
+      display: flex;
+      gap: 12px;
+      margin-left: 20px;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #3880ff;
+        cursor: pointer;
+
+        &:hover {
+          color: #0c64d6;
+        }
+      }
+    }
+
+    /* Checkbox no início */
+    ion-checkbox {
+      --scale: 1.2; /* aumenta tamanho */
+    }
+  }
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+}

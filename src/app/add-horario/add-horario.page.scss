@@ -1,0 +1,40 @@
+/* Container do formulário */
+.formulario {
+  padding: 16px;
+}
+
+/* Cada item da lista */
+.formulario ion-item {
+  display: flex;
+  flex-direction: column; /* label acima do input */
+  align-items: flex-start;
+  margin-bottom: 16px; /* espaço entre os campos */
+  --background: #f9f9f9; /* leve fundo cinza */
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Label acima do input */
+.formulario ion-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input ocupa toda a largura */
+.formulario ion-input {
+  width: 100%;
+}
+
+/* Botões na horizontal */
+.formulario ion-item:last-child {
+  flex-direction: row; /* botão ao lado do outro */
+  justify-content: flex-end;
+  gap: 12px; /* espaço entre os botões */
+  margin-top: 24px;
+}
+
+/* Botões estilizados */
+.formulario ion-button {
+  min-width: 120px;
+}

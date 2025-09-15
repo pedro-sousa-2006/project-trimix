@@ -1,0 +1,33 @@
+<ion-header>
+  <app-menu></app-menu>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <div class="estabelecimento">
+      <h2>Nome : <b>Estabelecimento</b></h2>
+    </div>
+    <div class="day">
+      <h2>Dia da semana : <b>dia</b></h2>
+    </div>
+    <div class="add">
+    <ion-button class="link_add_horario"
+     routerLink="/add-horario">+ Adicionar horario</ion-button>
+    </div>
+    <ion-list class="lista-horario">
+      <ion-item class="itens">
+        <div class="right">
+      <ion-checkbox slot="start"
+       [(ngModel)]="marcado"></ion-checkbox>        <h3>12:00</h3>
+        <h3>nome</h3>
+        </div>
+        <div class="left">
+        <a href="">Editar</a>
+        <a href="">Excluir</a>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer>
+<app-rodape></app-rodape>
+</ion-footer>
