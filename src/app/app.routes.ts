@@ -17,14 +17,14 @@ export const routes: Routes = [
   {
     path: 'rodape',
     loadComponent: () => import('./rodape/rodape.page').then( m => m.RodapePage)
-  },  {
+  },
+  {
     path: 'adicionar',
     loadComponent: () => import('./adicionar/adicionar.page').then( m => m.AdicionarPage)
   },
   {
     path: 'lista-horarios',
-    loadComponent: () => import('./lista-horarios/lista-horarios.page').then( m => m.ListaHorariosPage)
-  },
+    loadComponent: () => import('./lista-horarios/lista-horarios.page').then( m => m.ListaHorariosPage )},
   {
     path: 'add-horario',
     loadComponent: () => import('./add-horario/add-horario.page').then( m => m.AddHorarioPage)
