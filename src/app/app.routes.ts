@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'open-app',
     pathMatch: 'full',
   },
   {
@@ -36,6 +36,10 @@ export const routes: Routes = [
   {
     path: 'perfil',
     loadComponent: () => import('./perfil/perfil.page').then( m => m.PerfilPage)
+  },
+  {
+    path: 'open-app',
+    loadComponent: () => import('./open-app/open-app.page').then( m => m.OpenAppPage)
   },
 
 ];
