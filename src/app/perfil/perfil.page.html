@@ -1,0 +1,19 @@
+<ion-header>
+  <app-menu></app-menu>
+</ion-header>
+<ion-content>
+<ion-card>
+      <ion-item >
+        <ion-label><h2>Nome :</h2></ion-label>
+        <b>{{nome ? nome : "Ninguem marcou esse horario"}}</b>
+
+      </ion-item>
+      <ion-item>
+        <ion-button color="primary">Desmarcar</ion-button>
+        <ion-button color="danger" (click)="voltar()">Voltar</ion-button>
+      </ion-item>
+    </ion-card>
+</ion-content>
+<ion-footer>
+<app-rodape></app-rodape>
+</ion-footer>

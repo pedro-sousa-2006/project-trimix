@@ -29,5 +29,13 @@ export const routes: Routes = [
     path: 'add-horario',
     loadComponent: () => import('./add-horario/add-horario.page').then( m => m.AddHorarioPage)
   },
+  {
+    path: 'cliente',
+    loadComponent: () => import('./cliente/cliente.page').then( m => m.ClientePage)
+  },
+  {
+    path: 'perfil',
+    loadComponent: () => import('./perfil/perfil.page').then( m => m.PerfilPage)
+  },
 
 ];

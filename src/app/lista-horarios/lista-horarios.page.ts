@@ -21,6 +21,7 @@ export class ListaHorariosPage implements OnInit {
 
 
 constructor() { }
+nome = "";
 marcado = true;
   ngOnInit() {
   }
