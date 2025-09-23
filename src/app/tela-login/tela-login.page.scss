@@ -1,0 +1,46 @@
+ion-content {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 40px;
+}
+
+ion-item {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  --background: #f9f9f9;
+}
+
+ion-label {
+  font-weight: bold;
+  color: #333;
+}
+
+ion-input {
+  padding: 6px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 10px;
+
+  ion-button {
+    font-size: 14px;
+    color: #3880ff;
+  }
+}
+
+.submit {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mensagemErro {
+  margin-top: 15px;
+  text-align: center;
+
+  .erro {
+    color: red;
+  }
+}

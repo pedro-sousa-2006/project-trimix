@@ -1,0 +1,27 @@
+ion-content {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 20px;
+}
+
+ion-item {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  --background: #f9f9f9;
+}
+
+ion-label {
+  font-weight: bold;
+  color: #333;
+}
+
+ion-input {
+  padding: 6px;
+}
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

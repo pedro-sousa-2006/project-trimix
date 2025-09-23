@@ -1,0 +1,80 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <form action="" method="post">
+    <ion-list lines="full">
+
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input 
+          type="text" 
+          placeholder="Digite o nome aqui"
+          name="nome"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">CPF</ion-label>
+        <ion-input 
+          type="text" 
+          placeholder="Digite o CPF aqui"
+          name="cpf"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">CNPJ</ion-label>
+        <ion-input 
+          type="text" 
+          placeholder="Digite o CNPJ aqui"
+          name="cnpj"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input 
+          type="email" 
+          placeholder="Digite o email aqui"
+          name="email"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input 
+          type="password" 
+          placeholder="Digite a senha aqui"
+          name="senha"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Confirmar senha</ion-label>
+        <ion-input 
+          type="password" 
+          placeholder="Confirme a senha"
+          name="confirmaSenha"
+          class="input">
+        </ion-input>
+      </ion-item>
+
+      <div class="botoes">
+        <ion-button expand="block" type="submit" color="primary">
+          Enviar
+        </ion-button>
+        <ion-button expand="block" type="reset" color="medium">
+          Limpar
+        </ion-button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
+
+<app-rodape></app-rodape>

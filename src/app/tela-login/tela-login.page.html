@@ -1,0 +1,63 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <form>
+    <ion-list lines="full">
+
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input 
+          type="email"
+          placeholder="Digite seu email"
+          [(ngModel)]="email"
+          name="email"
+          class="input"
+          (ionFocus)="input()">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input 
+          type="password"
+          placeholder="Digite sua senha"
+          [(ngModel)]="senha"
+          name="senha"
+          class="input"
+          (ionFocus)="input()">
+        </ion-input>
+      </ion-item>
+
+      <div class="links">
+        <ion-button expand="block" fill="clear" (click)="telacadastro()">
+          Cadastre-se
+        </ion-button>
+      </div>
+
+      <div class="submit">
+        <ion-button 
+          expand="block" 
+          type="submit" 
+          (click)="adicionar()" 
+          class="btn-env">
+          Enviar
+        </ion-button>
+
+        <ion-button 
+          expand="block" 
+          type="reset" 
+          class="btn-reset"
+          color="danger">
+          Limpar
+        </ion-button>
+      </div>
+
+      <div class="mensagemErro">
+        <b class="erro">{{ mensagem }}</b>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
+
+<app-rodape></app-rodape>

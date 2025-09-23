@@ -40,6 +40,26 @@ export const routes: Routes = [
   {
     path: 'open-app',
     loadComponent: () => import('./open-app/open-app.page').then( m => m.OpenAppPage)
+  },  {
+    path: 'tela-login',
+    loadComponent: () => import('./tela-login/tela-login.page').then( m => m.TelaLoginPage)
   },
+  {
+    path: 'cadastro',
+    loadComponent: () => import('./cadastro/cadastro.page').then( m => m.CadastroPage)
+  },
+  {
+    path: 'tela-cadastro',
+    loadComponent: () => import('./tela-cadastro/tela-cadastro.page').then( m => m.TelaCadastroPage)
+  },
+  {
+    path: 'tela-cadastro',
+    loadComponent: () => import('./tela-cadastro/tela-cadastro.page').then( m => m.TelaCadastroPage)
+  },
+  {
+    path: 'cadastro',
+    loadComponent: () => import('./cadastro/cadastro.page').then( m => m.CadastroPage)
+  },
+
 
 ];
