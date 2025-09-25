@@ -60,6 +60,10 @@ export const routes: Routes = [
     path: 'cadastro',
     loadComponent: () => import('./cadastro/cadastro.page').then( m => m.CadastroPage)
   },
+  {
+    path: 'ida-semana',
+    loadComponent: () => import('./ida-semana/ida-semana.page').then( m => m.IdaSemanaPage)
+  },
 
 
 ];
