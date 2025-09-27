@@ -21,6 +21,19 @@ export class AddHorarioPage implements OnInit {
 voltar(){
   this.navcontroll.navigateRoot("/lista-horarios");
 }
+dia = "";
+desabilitar = true;
+hora = "";
+listahorarios(){
+  if(this.dia.length > 0|| this.hora.length > 0){
+    this.desabilitar = true;
+  }else{
+    this.desabilitar = false;
+      this.navcontroll.
+      navigateRoot("/lista-horarios");
+
+  }
+}
   ngOnInit() {
   }
 

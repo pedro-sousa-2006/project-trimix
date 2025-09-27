@@ -1,0 +1,50 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <form>
+    <ion-list lines="full">
+
+      <ion-item>
+        <ion-label position="stacked">Telefone</ion-label>
+        <ion-input 
+          type="text"
+          placeholder="Digite seu celular cadastrado"
+          [(ngModel)]="telefone"
+          name="email"
+          class="input"
+          (ionFocus)="input()">
+        </ion-input>
+      </ion-item>
+
+   
+
+    
+
+      <div class="submit">
+        <ion-button 
+          expand="block" 
+          type="submit" 
+          (click)="autenticar()" 
+          class="btn-env">
+          autenticar
+        </ion-button>
+
+        <ion-button 
+          expand="block" 
+          type="button"
+          (click)="voltar()"
+          class="btn-reset"
+          color="primary">
+          Voltar
+        </ion-button>
+      </div>
+
+      <div class="mensagemErro">
+        <b class="erro">{{ mensagemerro }}</b>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
+
+<app-rodape></app-rodape>

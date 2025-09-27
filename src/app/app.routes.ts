@@ -64,6 +64,18 @@ export const routes: Routes = [
     path: 'ida-semana',
     loadComponent: () => import('./ida-semana/ida-semana.page').then( m => m.IdaSemanaPage)
   },
+  {
+    path: 'autenticacao-cliente',
+    loadComponent: () => import('./autenticacao-cliente/autenticacao-cliente.page').then( m => m.AutenticacaoClientePage)
+  },
+  {
+    path: 'dia-semana',
+    loadComponent: () => import('./dia-semana/dia-semana.page').then( m => m.DiaSemanaPage)
+  },
+  {
+    path: 'ad-dia-semana',
+    loadComponent: () => import('./ad-dia-semana/ad-dia-semana.page').then( m => m.AdDiaSemanaPage)
+  },
 
 
 ];

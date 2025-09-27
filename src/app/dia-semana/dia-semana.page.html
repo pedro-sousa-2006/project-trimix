@@ -1,0 +1,51 @@
+<ion-header>
+  <app-menu></app-menu>
+</ion-header>
+
+<ion-content>
+  <form class="formulario">
+    <div class="add">
+      <ion-button class="link_add_horario" routerLink="/ad-dia-semana">
+        + Adicionar Dia da semana
+      </ion-button>
+    </div>
+
+    <div class="estabelecimento">
+      <h2>Nome : <b>Estabelecimento</b></h2>
+    </div>
+
+    <div class="day">
+      <h2 class="title-day">Dia da semana</h2>
+    </div>
+
+    <ion-list class="list-day">
+      <ion-item class="item-day">
+        <ion-button class="btn-add" 
+        routerLink="/lista-horarios">
+          Segunda
+        </ion-button>
+
+        <ion-button color="danger"
+         class="btn-add"
+        routerLink="/dia-semana">
+          Remover
+        </ion-button>
+      </ion-item>
+
+      <!-- Botão Voltar 100% -->
+      <div class="voltar" 
+      style="width: 100%; margin-top: 20px;"
+      >
+        <ion-button expand="block" 
+        color="primary" 
+        routerLink="/home">
+          Voltar
+        </ion-button>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <app-rodape></app-rodape>
+</ion-footer>

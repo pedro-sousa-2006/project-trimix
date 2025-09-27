@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./tela-login.page.scss'],
   standalone: true,
   imports: [
-    IonContent, IonHeader, IonTitle, IonToolbar,
+    IonContent, IonHeader, IonTitle, 
+    IonToolbar,
     CommonModule, FormsModule,
     MenuPage, RodapePage,
     IonLabel, IonInput, IonButton,
@@ -45,4 +46,7 @@ export class TelaLoginPage implements OnInit {
   }
 
   ngOnInit() {}
+  voltar(){
+    this.router.navigate(["/home"]);
+  }
 }
