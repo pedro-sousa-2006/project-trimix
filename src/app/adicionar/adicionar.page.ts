@@ -20,7 +20,10 @@ export class AdicionarPage implements OnInit {
 
   constructor(private nav:NavController) { }
   voltar(){
-    this.nav.navigateRoot("/home");
+    this.nav.navigateRoot("/tela-login");
+  }
+  confirmar(){
+    this.nav.navigateBack("/home");
   }
   ngOnInit() {
   }
