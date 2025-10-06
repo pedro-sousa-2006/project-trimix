@@ -76,6 +76,14 @@ export const routes: Routes = [
     path: 'ad-dia-semana',
     loadComponent: () => import('./ad-dia-semana/ad-dia-semana.page').then( m => m.AdDiaSemanaPage)
   },
+  {
+    path: 'gerenciar-usuarios',
+    loadComponent: () => import('./gerenciar-usuarios/gerenciar-usuarios.page').then( m => m.GerenciarUsuariosPage)
+  },
+  {
+    path: 'add-cliente-lista',
+    loadComponent: () => import('./add-cliente-lista/add-cliente-lista.page').then( m => m.AddClienteListaPage)
+  },
 
 
 ];

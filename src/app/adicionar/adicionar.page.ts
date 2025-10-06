@@ -6,6 +6,7 @@ import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
 import { IonInput } from '@ionic/angular/standalone';
 import { NavController } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-adicionar',
@@ -14,7 +15,7 @@ import { NavController } from '@ionic/angular';
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
     MenuPage, IonFooter, RodapePage, IonList, IonItem, IonInput, IonLabel, IonButton, 
-    IonCard]
+    IonCard , RouterModule]
 })
 export class AdicionarPage implements OnInit {
 

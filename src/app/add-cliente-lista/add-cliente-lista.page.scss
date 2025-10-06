@@ -1,0 +1,74 @@
+ion-content {
+  --background: #f4f7fa; /* fundo suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  padding-bottom: 10px;
+}
+
+ion-card-header {
+  text-align: center;
+  padding: 20px 10px 0;
+}
+
+ion-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.itens {
+  --background: transparent;
+  margin-bottom: 15px;
+}
+
+ion-label {
+  font-weight: 600;
+  color: #333;
+}
+
+ion-input {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+  background: #f9fafb;
+}
+
+ion-input::placeholder {
+  color: #999;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ion-button[color="primary"] {
+  --background: #2563eb;
+  --background-hover: #1d4ed8;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+ion-button[color="danger"] {
+  --background: #dc2626;
+  --background-hover: #b91c1c;
+  font-weight: 600;
+  border-radius: 10px;
+}

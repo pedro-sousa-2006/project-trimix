@@ -38,3 +38,14 @@
 .formulario ion-button {
   min-width: 120px;
 }
+.link_gestao{
+  text-decoration: underline;
+  display: inline-block;
+  color: blue;
+}
+.camp_gestao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

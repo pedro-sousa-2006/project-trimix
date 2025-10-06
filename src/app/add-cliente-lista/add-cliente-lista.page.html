@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <form>
+    <ion-card class="form-card">
+
+
+      <ion-card-content>
+        <ion-item class="itens">
+          <ion-label position="stacked">Cliente:</ion-label>
+          <ion-input type="text" placeholder="Insira o nome"></ion-input>
+        </ion-item>
+
+        <ion-item class="itens">
+          <ion-label position="stacked">Telefone:</ion-label>
+          <ion-input type="text" placeholder="Insira o telefone"></ion-input>
+        </ion-item>
+
+        <div class="buttons">
+          <ion-button color="primary" expand="block">Adicionar</ion-button>
+          <ion-button color="danger" expand="block" routerLink="/gerenciar-usuarios">Cancelar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </form>
+</ion-content>
+
+<app-rodape></app-rodape>
