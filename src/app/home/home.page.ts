@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonFooter, IonCard, IonImg, IonButton } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonFooter, IonCard, IonImg, IonButton, NavController } from '@ionic/angular/standalone';
 import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
-import { RouterLink } from '@angular/router';
+import { Route, RouterLink } from '@angular/router';
+import { routes } from '../app.routes';
 
 @Component({
   selector: 'app-home',
@@ -13,5 +14,13 @@ import { RouterLink } from '@angular/router';
      IonCard, IonImg, IonButton],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private navcontroll :NavController) {}
+  verificar(){
+    const getItem = localStorage;
+    if(!getItem.length){
+      this.navcontroll.navigateBack("/tela-login");
+    }else{
+      this.navcontroll.navigateBack("/adicionar")
+    };
+  }
 }

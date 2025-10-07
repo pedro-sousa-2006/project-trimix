@@ -30,12 +30,14 @@ export class TelaLoginPage implements OnInit {
   constructor(private router: Router) {}
 
   adicionar() {
+   const getItem = localStorage;
     if (this.email !== "pedro@hotmail.com") {
       this.mensagem = "Email inválido!";
     } else if (this.senha !== "123") {
       this.mensagem = "Senha inválida!";
     } else {
       this.router.navigate(["/adicionar"]);
+      localStorage.setItem("login",this.email);
     }
   }
   telacadastro(){
