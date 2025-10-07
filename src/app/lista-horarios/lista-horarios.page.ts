@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
     IonItem, IonButton , RouterLink]
 })
 export class ListaHorariosPage implements OnInit {
-
+local = localStorage.length;
 
 constructor() { }
 nome = "";

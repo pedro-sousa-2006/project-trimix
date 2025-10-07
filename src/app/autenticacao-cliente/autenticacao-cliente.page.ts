@@ -14,13 +14,14 @@ import { MenuPage } from "../menu/menu.page";
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonList, IonItem, IonLabel, IonButton, RodapePage, MenuPage]
 })
 export class AutenticacaoClientePage implements OnInit {
+constructor(private router: Router) { }
 
-  constructor(private router: Router) { }
-telefone= "";
+telefone = "";
+mensagemerro = "";
+
 input(){
 this.mensagemerro = "";
 }
-mensagemerro = "";
 autenticar(){
 if(this.telefone == ""){
     this.router.navigate(["/dia-semana"]);

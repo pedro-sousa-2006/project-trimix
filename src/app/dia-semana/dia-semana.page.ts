@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
     IonList]
 })
 export class DiaSemanaPage implements OnInit {
-
+local = localStorage.length;
   constructor() { }
 
   ngOnInit() {

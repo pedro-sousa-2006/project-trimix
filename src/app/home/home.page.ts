@@ -23,4 +23,12 @@ export class HomePage {
       this.navcontroll.navigateBack("/adicionar")
     };
   }
+  entrar(){
+   let local = localStorage.length;
+    if(local){
+      this.navcontroll.navigateBack("/dia-semana");
+    }else{
+      this.navcontroll.navigateBack("//autenticacao-cliente");
+    }
+  }
 }

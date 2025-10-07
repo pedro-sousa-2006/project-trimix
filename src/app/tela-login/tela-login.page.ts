@@ -31,7 +31,7 @@ export class TelaLoginPage implements OnInit {
 
   adicionar() {
    const getItem = localStorage;
-    if (this.email !== "pedro@hotmail.com") {
+    if (this.email !== "unisuam@souunisuam.com.br") {
       this.mensagem = "Email inválido!";
     } else if (this.senha !== "123") {
       this.mensagem = "Senha inválida!";
