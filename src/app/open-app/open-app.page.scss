@@ -6,11 +6,13 @@
 }
 .imagepage{
     height: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .btn-enter{
-    width: 350px;
-  --border-radius: 12px; /* bordas arredondadas */
+    height: auto;
+    width: auto;
+    color: blue;
+  --border-radius: 32px;
   --padding-top: 16px;
   --padding-bottom: 16px;
   --padding-start: 40px;
@@ -20,4 +22,24 @@
   font-size: 18px;
   transition: transform 0.2s, 
   box-shadow 0.2s;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+*{
+    background-color: #F38536;
+    height: auto;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link a{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.nomebarbearia{
+    margin: 5px;
 }
