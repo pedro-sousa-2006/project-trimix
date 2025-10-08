@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonFooter, IonCard, IonImg, IonButton, NavController } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle,
+   IonContent, IonFooter, IonCard,
+    IonImg, IonButton, NavController } from '@ionic/angular/standalone';
 import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
-import { Route, RouterLink } from '@angular/router';
-import { routes } from '../app.routes';
+import { Route, RouterLink }
+ from '@angular/router';
+
 
 @Component({
   selector: 'app-home',

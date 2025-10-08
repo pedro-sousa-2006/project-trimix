@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonImg, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle,NavController, IonToolbar, IonImg, IonButton } from '@ionic/angular/standalone';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,13 +11,17 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [IonContent, IonHeader, 
     IonTitle, IonToolbar, CommonModule, 
-    FormsModule, IonImg, IonButton , RouterModule]
+    FormsModule, IonImg, IonButton ,
+    RouterModule]
 })
 export class OpenAppPage implements OnInit {
 
-  constructor() { }
+  constructor(private navcontroll :  NavController) { }
 
   ngOnInit() {
+  }
+  google(){
+
   }
 
 }

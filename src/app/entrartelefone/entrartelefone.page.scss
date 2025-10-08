@@ -1,0 +1,93 @@
+/* 🌐 Estilo geral */
+* {
+  background-color: #2d3e50;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📄 Centraliza o formulário no centro da tela */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 📦 Caixa dos campos */
+.caixa {
+  margin: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* 🏷️ Texto dos labels */
+ion-label {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ✏️ Placeholder dos inputs */
+::placeholder {
+  color: #999;
+}
+
+/* 🔤 Estilo dos inputs */
+ion-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 3px solid orange;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #2d3e50;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Efeito ao focar no input */
+ion-input:focus {
+  border-color: #ff9800;
+}
+
+/* 📍 Ajustes de posicionamento */
+.end {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+/* 🔘 Botões */
+ion-button {
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 15px;
+  border: 3px solid #000;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    margin: 10px;
+}
+
+/* Hover no botão */
+ion-button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+.res{
+  margin: 10px;
+  display: block;
+}
+.res b{
+  font-size: 21px;
+  color: white;
+}

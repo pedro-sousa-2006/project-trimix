@@ -1,0 +1,54 @@
+<form action=""
+method="post">
+<div class="button" slot="start">
+  <ion-button
+  fill="clear"
+  routerLink="/">
+  ←
+</ion-button>
+</div>
+<div class="caixa">
+  <ion-label>Nome :</ion-label>
+  <ion-input type="text"
+  [(ngModel)]="nome"
+  (click)="input()"
+  id="nome"
+  class="nome"
+  name="nome"
+  placeholder="Digite o nome"
+  ></ion-input>
+</div>
+<div class="caixa">
+  <ion-label>Sobrenome :</ion-label>
+  <ion-input type="text"
+  placeholder="Digite o sobrenome"
+  [(ngModel)]="sobrenome"
+  (click)="input()"
+  id="nome"
+  class="nome"
+  name="nome"
+  ></ion-input>
+</div>
+<div class="caixa">
+  <ion-label>telefone :</ion-label>
+  <ion-input type="text"
+  placeholder="(XX) XXXXX-XXXX"
+  [(ngModel)]="telefone"
+  (click)="input()"
+  class="telefone"
+  id="telefone"
+  name="telefone"
+  ></ion-input>
+</div>
+<div class="res">
+  <b>{{resposta}}</b>
+</div>
+<div class="end" slot="end">
+  <ion-button
+  type="submit"
+  class="btn"
+  (click)="entrar()"
+  fill="clear"
+  >→</ion-button>
+</div>
+</form>

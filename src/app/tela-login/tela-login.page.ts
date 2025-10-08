@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonInput, IonHeader, IonTitle, IonToolbar, IonLabel, IonButton, IonItem, IonList } from '@ionic/angular/standalone';
+import { IonContent, IonInput, IonHeader,
+   IonTitle, IonToolbar, IonLabel,
+    IonButton, IonItem, IonList } from '@ionic/angular/standalone';
 import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
 import { Router } from '@angular/router';   

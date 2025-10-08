@@ -84,6 +84,14 @@ export const routes: Routes = [
     path: 'add-cliente-lista',
     loadComponent: () => import('./add-cliente-lista/add-cliente-lista.page').then( m => m.AddClienteListaPage)
   },
+  {
+    path: 'entrargoogle',
+    loadComponent: () => import('./entrargoogle/entrargoogle.page').then( m => m.EntrargooglePage)
+  },
+  {
+    path: 'entrartelefone',
+    loadComponent: () => import('./entrartelefone/entrartelefone.page').then( m => m.EntrartelefonePage)
+  },
 
 
 ];
