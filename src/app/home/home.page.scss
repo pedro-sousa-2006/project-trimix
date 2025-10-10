@@ -50,3 +50,14 @@
   height: 200px;
   width: 400px;
 }
+.vazio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+}
+.erro{
+  font-size: 14px;
+  color: red;
+}

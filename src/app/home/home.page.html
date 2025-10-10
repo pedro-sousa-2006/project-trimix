@@ -5,9 +5,12 @@
   <div class="add">
     <ion-button class="link_add" (click)="verificar()">+ Adicionar</ion-button>
   </div>
+  <div class="vazio">
+    <h2 class="erro">{{mensagem}}</h2>
+  </div>
 <ion-card class="cards" 
 *ngFor="let empresa of nomecomponent , let i = index">
-  <ion-img class="image" [src]="imagenscomponent[0]"></ion-img>
+  <ion-img class="image" [src]="imagenscomponent[i]"></ion-img>
   <div class="nomebarbearia">
     <b>{{nomecomponent}}</b>
   </div>

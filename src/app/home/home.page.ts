@@ -14,6 +14,7 @@ import { RodapePage } from "../rodape/rodape.page";
 import {  RouterLink }
  from '@angular/router';
 import { Trimixservices } from '../services/trimixservices';
+import { empty } from 'rxjs';
 
 
 @Component({
@@ -36,11 +37,15 @@ import { Trimixservices } from '../services/trimixservices';
 export class HomePage {
   nomecomponent : Array<string> = [];
   imagenscomponent :Array<string>= [];
+  mensagem = "";
 
   ngOnInit(){
   const dados = this.trimixservice.retorno();
   this.nomecomponent = dados.nomes;
   this.imagenscomponent = dados.imagens;
+  if(this.nomecomponent.length == 0){
+    this.mensagem = "Não há nenhum estabelecimento no momento !";
+  }
   }
   constructor(private navcontroll :NavController ,
      private trimixservice :Trimixservices
