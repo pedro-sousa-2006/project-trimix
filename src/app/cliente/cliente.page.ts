@@ -11,7 +11,9 @@ import { IonInput } from '@ionic/angular/standalone';
   templateUrl: './cliente.page.html',
   styleUrls: ['./cliente.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule,
+  imports: [IonContent, 
+    IonHeader, IonTitle, IonToolbar, 
+    CommonModule,
     FormsModule, MenuPage, IonFooter, RodapePage, IonList, IonItem,
     IonLabel, IonButton, IonInput]
 })

@@ -8,13 +8,25 @@
         <ion-label>Insira a imagem do estabelecimento :</ion-label>
       </ion-item>
       <ion-item>
-        <ion-input type="file" placeholder="Insira uma imagem aqui"></ion-input>
+        <ion-input type="file"
+         placeholder="Insira uma imagem aqui"
+         name="imagem"
+         [(ngModel)]="imagem"
+         class="input"
+         id="imagem"
+        ></ion-input>
       </ion-item>
       <ion-item >
         <ion-label>Insira o nome do estabelecimento</ion-label>
       </ion-item>
       <ion-item>
-        <ion-input type="text-p" placeholder="Insira o nome aqui"></ion-input>
+        <ion-input type="text"
+         placeholder="Insira o nome aqui"
+         name="nome"
+         [(ngModel)]="nome"
+         id="nome"
+         class="input"
+        ></ion-input>
       </ion-item>
       <ion-item>
         <ion-button color="primary" (click)="confirmar()">Confirmar</ion-button>
