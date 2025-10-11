@@ -4,5 +4,4 @@ export class dono{
     cpf_dono :string = "";
     cnpj_dono : string = "";
     email_dono : string = "";
-
 }

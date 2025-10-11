@@ -11,10 +11,10 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonImg, IonButton, IonButt
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonImg, IonButton, IonButtons]
 })
 export class MenuPage implements OnInit {
-local = localStorage;
+local = localStorage.getItem("login");
   constructor(private navcontroll : NavController) { }
   remover(){
-    localStorage.clear();
+    localStorage.removeItem("login");
     this.navcontroll.navigateBack("/home");
   }
 

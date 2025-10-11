@@ -51,8 +51,8 @@ export class HomePage {
      private trimixservice :Trimixservices
   ) {}
   verificar(){
-    const getItem = localStorage;
-    if(!getItem.length){
+    const getItem = localStorage.getItem("login");
+    if(!getItem){
       this.navcontroll.navigateBack("/tela-login");
     }else{
       this.navcontroll.navigateBack("/adicionar")

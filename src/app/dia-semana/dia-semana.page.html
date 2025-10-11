@@ -11,14 +11,14 @@
     </div>
 
   <div class="estabelecimento">
-      <h2>Nome : <b>Estabelecimento</b></h2>
+      <h2>Nome : <b>{{nome}}</b></h2>
     </div>
 
     <ion-list class="list-day">
-      <ion-item class="item-day">
+      <ion-item class="item-day" *ngFor="let aparecer of aparecersemana">
         <ion-button class="btn-add" 
         routerLink="/lista-horarios">
-          Segunda
+          {{aparecer}}
         </ion-button>
 
         <ion-button color="danger" *ngIf="local"

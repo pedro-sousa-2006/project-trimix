@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonInput, IonCard, IonItem, IonLabel, IonButton, IonFooter, IonList } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonInput, IonCard, IonItem,
+   IonLabel, IonButton, IonFooter, IonList } from '@ionic/angular/standalone';
 import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
 import { RouterModule } from '@angular/router';
+import { Trimixservices } from '../services/trimixservices';
 
 @Component({
   selector: 'app-dia-semana',
@@ -19,10 +21,18 @@ import { RouterModule } from '@angular/router';
     IonList]
 })
 export class DiaSemanaPage implements OnInit {
-local = localStorage.length;
-  constructor() { }
+local = localStorage.getItem("login");
+  constructor(private trimixservice :Trimixservices) { }
+  aparecersemana : Array<string> = [];
+  nome = "";
 
   ngOnInit() {
+   const dados = this.trimixservice.retorno();
+   this.nome = dados.nomes[0];
+   const semanal = this.trimixservice.retornadia();
+   this.aparecersemana = semanal.semana;
+
   }
+ 
 
 }

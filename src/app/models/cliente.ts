@@ -1,6 +1,6 @@
 export class cliente{
-    private id_cliente ?: number ;
-    private user_name : string = "";
-    private  telefone : string = "";
-    private email : string = "";
+     id_cliente ?: number ;
+     user_name : string = "";
+      telefone : string = "";
+     email : string = "";
 }

@@ -39,6 +39,7 @@ export class TelaLoginPage implements OnInit {
       this.mensagem = "Senha inválida!";
     } else {
       this.router.navigate(["/adicionar"]);
+      localStorage.getItem("login");
       localStorage.setItem("login",this.email);
     }
   }

@@ -5,6 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonFooter, IonCard, IonLis
 import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
 import { RouterLink } from '@angular/router';
+import { Trimixservices } from '../services/trimixservices';
 
 @Component({
   selector: 'app-lista-horarios',
@@ -19,11 +20,15 @@ import { RouterLink } from '@angular/router';
 })
 export class ListaHorariosPage implements OnInit {
 local = localStorage.length;
-
-constructor() { }
-nome = "";
-marcado = true;
+arrayaparecer :string[] = [];
+constructor(private trimixservice : Trimixservices) { }
+nome = "pedro";
+estabelecimento = "";
   ngOnInit() {
+  const dados = this.trimixservice.retorno();
+  this.estabelecimento = dados.nomes[0];
+  const lista = this.trimixservice.retornohora();
+  this.arrayaparecer = lista.horadia;
   }
 
 }

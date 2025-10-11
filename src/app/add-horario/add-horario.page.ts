@@ -6,6 +6,7 @@ import { MenuPage } from "../menu/menu.page";
 import { RodapePage } from "../rodape/rodape.page";
 import { IonInput } from '@ionic/angular/standalone';
 import { NavController } from '@ionic/angular';
+import { Trimixservices } from '../services/trimixservices';
 
 @Component({
   selector: 'app-add-horario',
@@ -17,22 +18,17 @@ import { NavController } from '@ionic/angular';
 })
 export class AddHorarioPage implements OnInit {
 
-  constructor(private navcontroll : NavController) { }
+  constructor(private navcontroll : NavController
+    ,private trimixservice:Trimixservices
+  ) { }
 voltar(){
   this.navcontroll.navigateRoot("/lista-horarios");
 }
-dia = "";
 desabilitar = true;
-hora = "";
+adicionarhora = "";
 listahorarios(){
-  if(this.dia.length > 0|| this.hora.length > 0){
-    this.desabilitar = true;
-  }else{
-    this.desabilitar = false;
-      this.navcontroll.
-      navigateRoot("/lista-horarios");
-
-  }
+  this.trimixservice.addhora(this.adicionarhora);
+  this.navcontroll.navigateRoot("/lista-horarios");
 }
   ngOnInit() {
   }

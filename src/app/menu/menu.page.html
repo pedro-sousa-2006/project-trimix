@@ -2,7 +2,7 @@
 <div class="nav">
     <ion-img class="logo" src="assets/imagens/timix.jpeg"></ion-img>
     <a href="/home">Trimix</a>
-    <div class="posicao" slot="Start" *ngIf="local.length">
+    <div class="posicao" slot="Start" *ngIf="local">
         <div class="verificar">
         <ion-button color="danger" class="logado"
         (click)="remover()">Sair</ion-button>

@@ -9,6 +9,7 @@ import { } from "../../../node_modules/@ionic/angular/standalone/directives/inpu
 import { RodapePage } from "../rodape/rodape.page";
 import { MenuPage } from "../menu/menu.page";
 import { Router } from '@angular/router';
+import { Trimixservices } from '../services/trimixservices';
 
 @Component({
   selector: 'app-ad-dia-semana',
@@ -23,11 +24,15 @@ import { Router } from '@angular/router';
 })
 export class AdDiaSemanaPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router
+    ,private trimixservice:Trimixservices
+  ) { }
 
+dia : string = "";
   ngOnInit() {
   }
   listadia(){
+    this.trimixservice.adddia(this.dia)
     this.router.navigate(["/dia-semana"]);
   }
   dia_semana(){

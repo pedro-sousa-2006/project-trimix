@@ -4,7 +4,7 @@
 <ion-content>
   <div class="container">
     <div class="estabelecimento">
-      <h2>Nome : <b>Estabelecimento</b></h2>
+      <h2>Nome : <b>{{estabelecimento}}</b></h2>
     </div>
     <div class="day">
       <h2>Dia da semana : <b>dia</b></h2>
@@ -14,9 +14,9 @@
      routerLink="/add-horario">+ Adicionar horario</ion-button>
     </div>
     <ion-list class="lista-horario">
-      <ion-item class="itens">
+      <ion-item class="itens" *ngFor="let aparecer of arrayaparecer ;let i = index">
         <div class="right">
-      <h3>12:00</h3>
+      <h3>{{arrayaparecer[i]}}</h3>
         <h3><ion-button 
           routerLink="/cliente">{{nome ? nome : "..."}}</ion-button></h3>
         </div>
