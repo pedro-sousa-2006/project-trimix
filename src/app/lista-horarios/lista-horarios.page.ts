@@ -19,16 +19,21 @@ import { Trimixservices } from '../services/trimixservices';
     IonItem, IonButton , RouterLink]
 })
 export class ListaHorariosPage implements OnInit {
-local = localStorage.length;
+local = localStorage.getItem("login");
 arrayaparecer :string[] = [];
-constructor(private trimixservice : Trimixservices) { }
-nome = "pedro";
-estabelecimento = "";
-  ngOnInit() {
+aparecerdiasemana : string[] = [];
+constructor(private trimixservice : Trimixservices) {
   const dados = this.trimixservice.retorno();
   this.estabelecimento = dados.nomes[0];
   const lista = this.trimixservice.retornohora();
   this.arrayaparecer = lista.horadia;
+  const semanal = this.trimixservice.retornadia();
+   this.aparecerdiasemana = semanal.semana;
+ }
+nome = "pedro";
+estabelecimento = "";
+  ngOnInit() {
+  
   }
 
 }

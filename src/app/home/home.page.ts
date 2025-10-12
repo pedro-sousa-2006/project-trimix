@@ -40,16 +40,18 @@ export class HomePage {
   mensagem = "";
 
   ngOnInit(){
-  const dados = this.trimixservice.retorno();
+  
+  }
+  constructor(private navcontroll :NavController ,
+     private trimixservice :Trimixservices
+  ) {
+    const dados = this.trimixservice.retorno();
   this.nomecomponent = dados.nomes;
   this.imagenscomponent = dados.imagens;
   if(this.nomecomponent.length == 0){
     this.mensagem = "Não há nenhum estabelecimento no momento !";
   }
   }
-  constructor(private navcontroll :NavController ,
-     private trimixservice :Trimixservices
-  ) {}
   verificar(){
     const getItem = localStorage.getItem("login");
     if(!getItem){

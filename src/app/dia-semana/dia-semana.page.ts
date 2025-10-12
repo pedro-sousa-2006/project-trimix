@@ -22,15 +22,16 @@ import { Trimixservices } from '../services/trimixservices';
 })
 export class DiaSemanaPage implements OnInit {
 local = localStorage.getItem("login");
-  constructor(private trimixservice :Trimixservices) { }
+  constructor(private trimixservice :Trimixservices) {
+  const dados = this.trimixservice.retorno();
+   this.nome = dados.nomes[0];
+   const semanal = this.trimixservice.retornadia();
+   this.aparecersemana = semanal.semana;
+   }
   aparecersemana : Array<string> = [];
   nome = "";
 
   ngOnInit() {
-   const dados = this.trimixservice.retorno();
-   this.nome = dados.nomes[0];
-   const semanal = this.trimixservice.retornadia();
-   this.aparecersemana = semanal.semana;
 
   }
  
