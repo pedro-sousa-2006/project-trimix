@@ -1,0 +1,89 @@
+/* === Fundo da tela === */
+ion-content {
+  --background: #1e334a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 30px 20px;
+}
+
+/* === Formulário principal === */
+.formulario {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Cada caixa de input === */
+.caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+ion-label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+ion-input {
+  --background: #2b4460;
+  --color: #fff;
+  --placeholder-color: #cfd8dc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  width: 300px;
+}
+
+/* === Botões === */
+.btn-voltar,
+.btn-enviar {
+  width: 100%;
+}
+
+/* Botão principal (Confirmar) */
+.btn-principal {
+  --background: #0a2540 !important;
+  --color: #fff !important;
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 45px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+
+/* Botão secundário (Voltar) */
+.btn-secundario {
+  --background: transparent;
+  --color: #fff;
+  border: 1px solid #fff;
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 40px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* === Ajustes de layout === */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-voltar {
+  align-self: flex-start;
+}

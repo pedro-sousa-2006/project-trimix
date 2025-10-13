@@ -1,0 +1,104 @@
+/* === Fundo geral === */
+ion-content {
+  --background: #1e334a; /* Cor de fundo da tela */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 30px 20px;
+  margin: 20px;
+}
+
+/* === Botão principal "Entrar" === */
+.btn-login {
+  --background: #0a2540 !important;
+  --color: #fff !important;
+  --border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.03);
+  background: #173f63;
+}
+
+/* === Container geral do conteúdo === */
+.conteudo {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Caixas de input === */
+.caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+ion-label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+ion-input {
+  --background: #2b4460;
+  --color: #fff;
+  --placeholder-color: #cfd8dc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* === Texto "ou" === */
+.ou {
+  text-align: center;
+  color: #cfd8dc;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+/* === Botões de login alternativo === */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-google {
+  --background: #fff;
+  --color: #1e334a;
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 45px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+  text-transform: none;
+}
+
+.btn-guest {
+  --background: transparent;
+  --color: #fff;
+  border: 1px solid #fff;
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 45px;
+  text-transform: none;
+}
+
+/* === Botão "Entrar" separado do resto === */
+.btn-enter {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 30px;
+}
